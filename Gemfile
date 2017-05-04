@@ -15,6 +15,11 @@ gem 'puma', '~> 3.0'
 gem 'devise_token_auth'
 gem 'omniauth', '>= 1.0.0'
 
+gem 'pry'
+
+gem 'rspec-rails', group: [:test, :development]
+gem 'factory_girl_rails', group: [:test, :development]
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
