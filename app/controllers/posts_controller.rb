@@ -18,11 +18,11 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find_by(params.permit :id)
-    render json: @post
+    render json: @post, include: [:user, :comments]
   end
 
   private
   def post_params
-    params.require(:post).permit(:title, :body)
+    params.permit(:title, :body)
   end
 end

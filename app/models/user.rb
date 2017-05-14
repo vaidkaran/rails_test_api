@@ -6,5 +6,6 @@ class User < ActiveRecord::Base
 
   include DeviseTokenAuth::Concerns::User
 
+  validates_uniqueness_of :email
   has_many :posts
 end
